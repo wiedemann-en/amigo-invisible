@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AmigoInvisible.ParticipantsListPage">
+    
+    <ContentPage.Content>
+        <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout>
+                <Entry x:Name="TxtContactName" Placeholder="Ingrese Nombre" />
+                <Entry x:Name="TxtContactNumber" Placeholder="Ingrese Nro. Teléfono" />
+                <Entry x:Name="TxtContactEmail" Placeholder="Ingrese Email" />
+                <Button x:Name="BtnAddParticipant" Text="Agregar Contacto" HorizontalOptions="Center" HeightRequest="40" WidthRequest="250" VerticalOptions="EndAndExpand" Margin="0,10,0,0" />
+                <BoxView HeightRequest="1" BackgroundColor="Silver" HorizontalOptions="FillAndExpand" />
+
+                <ScrollView>
+                    <ListView x:Name="LvParticipants" RowHeight="35" IsVisible="True">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation="Vertical" Padding="8,0,8,0">
+                                        <Label Text="{Binding Resume}" TextColor="Black" FontSize="14" LineBreakMode="TailTruncation" />
+                                        <Button Text="[-]" Clicked="DeleteParticipant" CommandParameter="{Binding Index}" />
+                                        <Button Text="[Reglas]" Clicked="PairingsParticipant" CommandParameter="{Binding Index}" />
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </ScrollView>
+
+                <Button x:Name="BtnBack" Text="Volver" />
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

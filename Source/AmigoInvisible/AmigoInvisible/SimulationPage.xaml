@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             Title="Simulación de Sorteo"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AmigoInvisible.SimulationPage">
+    
+    <ContentPage.Content>
+        <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout>
+                <Button x:Name="BtnDoSimulation" Text="Simular Nuevamente" HorizontalOptions="Center" HeightRequest="40" WidthRequest="250" VerticalOptions="EndAndExpand" Margin="0,10,0,0" />
+                <BoxView HeightRequest="1" BackgroundColor="Silver" HorizontalOptions="FillAndExpand" />
+
+                <ScrollView>
+                    <ListView x:Name="LvSimulation" RowHeight="35" IsVisible="True">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Label Text="{Binding Resume}" TextColor="Black" FontSize="14" LineBreakMode="TailTruncation" />
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </ScrollView>
+
+                <Button x:Name="BtnBack" Text="Volver" />
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,16 @@
+C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible\bin\Debug\netstandard2.0\AmigoInvisible.deps.json
+C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible\bin\Debug\netstandard2.0\AmigoInvisible.dll
+C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible\bin\Debug\netstandard2.0\AmigoInvisible.pdb
+C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible\obj\Debug\netstandard2.0\AmigoInvisible.csproj.CoreCompileInputs.cache
+C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible\obj\Debug\netstandard2.0\AmigoInvisible.AssemblyInfoInputs.cache
+C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible\obj\Debug\netstandard2.0\AmigoInvisible.AssemblyInfo.cs
+C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible\obj\Debug\netstandard2.0\AmigoInvisible.dll
+C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible\obj\Debug\netstandard2.0\AmigoInvisible.pdb
+C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible\obj\Debug\netstandard2.0\PairingsListPage.xaml.g.cs
+C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible\obj\Debug\netstandard2.0\ParticipantsListPage.xaml.g.cs
+C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible\obj\Debug\netstandard2.0\RafflePage.xaml.g.cs
+C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible\obj\Debug\netstandard2.0\SimulationPage.xaml.g.cs
+C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible\obj\Debug\netstandard2.0\AmigoInvisible.csprojAssemblyReference.cache

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AmigoInvisible.PairingsListPage">
+    
+    <ContentPage.Content>
+        <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout>
+                <Label x:Name="LblParticipant" />
+                <BoxView HeightRequest="1" BackgroundColor="Silver" HorizontalOptions="FillAndExpand" />
+
+                <ScrollView>
+                    <ListView x:Name="LvPairings" RowHeight="35" IsVisible="True">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <!--<Grid Margin="0,0,0,10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout VerticalOptions="CenterAndExpand">
+                                            <Label Text="{Binding Data.Name}"  />
+                                            <Label Text="{Binding Data.Description}" FontSize="10" />
+                                        </StackLayout>
+                                        <Switch IsToggled="{Binding Selected}" Grid.Column="1" />
+                                    </Grid>-->
+
+                                    <StackLayout Orientation="Vertical" Padding="8,0,8,0">
+                                        <Label Text="{Binding Nombre}" TextColor="Black" FontSize="14" LineBreakMode="TailTruncation" />
+                                        <Switch IsToggled="{Binding Permitted}" Grid.Column="1" />
+                                        <Switch IsToggled="{Binding Bidirectional}" Grid.Column="1" />
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </ScrollView>
+
+                <Button x:Name="BtnBack" Text="Volver" />
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

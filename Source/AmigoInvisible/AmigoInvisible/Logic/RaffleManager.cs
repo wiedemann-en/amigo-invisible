@@ -27,9 +27,12 @@ namespace AmigoInvisible.Logic
 
         public List<Gift> DoRaffleAndSendSms()
         {
-            var gifts = Raffle();
+            //var gifts = Raffle();
+            var gifts = RaffleHardcode();
             foreach (var item in gifts)
+            {
                 _smsManager.SendSms(item.NumberFrom, item.NameFrom, item.NameTo);
+            }
             return gifts;
         }
 
@@ -60,5 +63,22 @@ namespace AmigoInvisible.Logic
             return gifts;
         }
 
+        private List<Gift> RaffleHardcode()
+        {
+            var gifts = new List<Gift>()
+            {
+                new Gift("+541166417726", "Artur", "Clau"),
+                new Gift("+541165094568", "Bri", "Cris"),
+                new Gift("+541132026956", "Caro", "Cyn"),
+                new Gift("+541150110614", "Clau", "Mel"),
+                new Gift("+541141655143", "Cris", "Jesi"),
+                new Gift("+541168596541", "Cyn", "Dario"),
+                new Gift("+541169334190", "Dario", "Nico"),
+                new Gift("+541159946074", "Jesi", "Caro"),
+                new Gift("+541153259426", "Mel", "Artur"),
+                new Gift("+541160564676", "Nico", "Bri")
+            };
+            return gifts;
+        }
     }
 }

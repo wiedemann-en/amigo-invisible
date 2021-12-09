@@ -114,7 +114,3 @@ C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible.Android\obj\De
 C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible.Android\obj\Debug\81\android\assets\Wapps.Core.pdb
 C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.pdb
 C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.pdb
-C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible.Android\obj\Debug\81\linksrc\AmigoInvisible.dll.mdb
-C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible.Android\obj\Debug\81\linksrc\FormsViewGroup.dll.mdb
-C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible.Android\obj\Debug\81\linksrc\Plugin.Messaging.dll.mdb
-C:\Source\PoC\Mobile\AmigoInvisible\AmigoInvisible\AmigoInvisible.Android\obj\Debug\81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb

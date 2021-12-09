@@ -72,7 +72,7 @@ namespace AmigoInvisible.Droid.Services
 
                 sentPI = PendingIntent.GetBroadcast(Application.Context, 0, new Intent(SENT), 0);
 
-                var message = $"Eh amigo! Te toca gastar unos $$$ en {nameTo.ToUpper()}!";
+                var message = $"Hola {nameFrom.ToUpper()}! Este 2021 te toca regalar algo lindo a {nameTo.ToUpper()}!";
                 sms.SendTextMessage(number, null, message, sentPI, null);
             }
             catch (Exception ex)

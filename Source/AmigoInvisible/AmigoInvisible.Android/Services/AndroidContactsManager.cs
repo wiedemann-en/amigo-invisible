@@ -18,10 +18,23 @@ namespace AmigoInvisible.Droid.Services
         public ICollection<Participant> GetContacts()
         {
             var partakers = new List<Participant>();
-            partakers.Add(new Participant(0, "Name-001", "+541122223333", new List<string>() { "Name-002" }));
-            partakers.Add(new Participant(1, "Name-002", "+541122223333", new List<string>() { "Name-001" }));
-            partakers.Add(new Participant(2, "Name-003", "+541122223333", new List<string>() { "Name-004" }));
-            partakers.Add(new Participant(3, "Name-004", "+541122223333", new List<string>() { "Name-003" }));
+            partakers.Add(new Participant(0, "Artur", "+541166417726", new List<string>() { "Cris" }));
+            partakers.Add(new Participant(1, "Bri", "+541165094568", new List<string>() { "Dario" }));
+            partakers.Add(new Participant(2, "Caro", "+541132026956", new List<string>() { "" }));
+            partakers.Add(new Participant(3, "Clau", "+541150110614", new List<string>() { "Cyn" }));
+            partakers.Add(new Participant(4, "Cris", "+541141655143", new List<string>() { "Artur" }));
+            partakers.Add(new Participant(5, "Cyn", "+541168596541", new List<string>() { "Clau" }));
+            partakers.Add(new Participant(6, "Dario", "+541169334190", new List<string>() { "Bri" }));
+            partakers.Add(new Participant(7, "Jesi", "+541159946074", new List<string>() { "" }));
+            partakers.Add(new Participant(8, "Mel", "+541153259426", new List<string>() { "Nico", "Cyn" }));
+            partakers.Add(new Participant(9, "Nico", "+541160564676", new List<string>() { "Mel", "Cyn" }));
+            // Familia Dario
+            //partakers.Add(new Participant(0, "Bri", "+541165094568", new List<string>() { "Dario" }));
+            //partakers.Add(new Participant(1, "Carlos", "+541140619496", new List<string>() { "Patri" }));
+            //partakers.Add(new Participant(2, "Caro", "+541169692582", new List<string>() { "Nico" }));
+            //partakers.Add(new Participant(3, "Dario", "+541169334190", new List<string>() { "Bri" }));
+            //partakers.Add(new Participant(4, "Nico", "+541165609639", new List<string>() { "Caro" }));
+            //partakers.Add(new Participant(5, "Patri", "+541162997605", new List<string>() { "Carlos" }));
             return partakers;
         }
 

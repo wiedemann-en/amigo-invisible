@@ -19,7 +19,7 @@ using AmigoInvisible.Models;
 namespace AmigoInvisible.Droid
 {
     [Activity(Label = "Amigo Invisible", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity, ActivityCompat.IOnRequestPermissionsResultCallback
     {
         protected async override void OnCreate(Bundle savedInstanceState)
         {
@@ -67,22 +67,22 @@ namespace AmigoInvisible.Droid
         private async Task GetPermissionsAsync()
         {
             const string permission = Manifest.Permission.AccessFineLocation;
-
-            if (CheckSelfPermission(permission) == (int)Android.Content.PM.Permission.Granted)
+            var checkPermission = ActivityCompat.CheckSelfPermission(Application.Context, permission);
+            if (checkPermission == Permission.Granted)
             {
                 //TODO change the message to show the permissions name
                 Toast.MakeText(this, "Special permissions granted", ToastLength.Short).Show();
                 return;
             }
 
-            if (ShouldShowRequestPermissionRationale(permission))
+            if (ActivityCompat.ShouldShowRequestPermissionRationale(this, permission))
             {
                 AlertDialog.Builder alert = new AlertDialog.Builder(this);
                 alert.SetTitle("Permissions Needed");
                 alert.SetMessage("The application need special permissions to continue");
                 alert.SetPositiveButton("Request Permissions", (senderAlert, args) =>
                 {
-                    RequestPermissions(PermissionsGroupLocation, RequestLocationId);
+                    ActivityCompat.RequestPermissions(this, PermissionsGroupLocation, RequestLocationId);
                 });
 
                 alert.SetNegativeButton("Cancel", (senderAlert, args) =>
@@ -96,10 +96,10 @@ namespace AmigoInvisible.Droid
                 return;
             }
 
-            RequestPermissions(PermissionsGroupLocation, RequestLocationId);
+            ActivityCompat.RequestPermissions(this, PermissionsGroupLocation, RequestLocationId);
         }
 
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
+        public void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
         {
             if (requestCode == RequestLocationId)
             {

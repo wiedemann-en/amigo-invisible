@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "+UjSGaWInCzSL+fLqyBnAinJBkM1Iab/XAd+W2DAt6Kl0PSYlpx/g8wbp8BblwGZGHeliQ88D6LCrRQr2Cy8Cg==",
+  "success": true,
+  "projectFilePath": "C:\\Source\\Wiedemann\\amigo-invisible\\Source\\AmigoInvisible\\AmigoInvisible\\AmigoInvisible.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nwied\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\nwied\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\nwied\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\nwied\\.nuget\\packages\\sqlite-net-pcl\\1.4.118\\sqlite-net-pcl.1.4.118.nupkg.sha512",
+    "C:\\Users\\nwied\\.nuget\\packages\\sqlitepclraw.bundle_green\\1.1.5\\sqlitepclraw.bundle_green.1.1.5.nupkg.sha512",
+    "C:\\Users\\nwied\\.nuget\\packages\\sqlitepclraw.core\\1.1.5\\sqlitepclraw.core.1.1.5.nupkg.sha512",
+    "C:\\Users\\nwied\\.nuget\\packages\\wapps\\0.2.12\\wapps.0.2.12.nupkg.sha512",
+    "C:\\Users\\nwied\\.nuget\\packages\\wapps.forms\\0.2.14\\wapps.forms.0.2.14.nupkg.sha512",
+    "C:\\Users\\nwied\\.nuget\\packages\\xamarin.forms\\4.8.0.1687\\xamarin.forms.4.8.0.1687.nupkg.sha512"
+  ],
+  "logs": []
+}
